@@ -14,7 +14,7 @@ video = cv2.VideoCapture(f'{path}\\media\\video.mp4')
 
 # Get the 1st frame of the video.mp4
 success, videoImg = video.read()
-# Get target image heigth and width
+# Get target image height and width
 h, w, c = targetImg.shape
 # Resize the 1st frame of the video.mp4
 videoImg = cv2.resize(videoImg, (h, w))
