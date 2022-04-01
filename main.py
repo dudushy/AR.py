@@ -18,8 +18,9 @@ volume = cast(interface, POINTER(IAudioEndpointVolume))
 
 volMin, volMax = volume.GetVolumeRange()[:2]
 startChangeVolume = False
-
 def main():
+    volBar = 400
+    volPer = 0
     while True:
         success, img = cap.read()
         imgRGB = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
@@ -53,12 +54,19 @@ def main():
                 length = hypot(x2 - x1, y2 - y1)
 
                 vol = np.interp(length, [15, 220], [volMin, volMax])
+                volBar = np.interp(length, [15, 220], [400, 150])
+                volPer = np.interp(length, [15, 220], [0, 150])
                 print(vol, length)
                 volume.SetMasterVolumeLevel(vol, None)
 
             # Hand range 15 - 220
             # Volume range -63.5 - 0.0
-            
+
+        cv2.rectangle(img,(50,150), (85,400), (0,255,0), 3)
+        cv2.rectangle(img, (50, int(volBar)), (85,400), (0,255,0), cv2.FILLED)
+        cv2.putText(img, f'{int(volPer)} %', (40,450), cv2.FONT_HERSHEY_COMPLEX,
+                        1, (0,250,0), 3)
+
         cv2.imshow('Image', img)
         if cv2.waitKey(1) & 0xff==ord('q'):
             break
