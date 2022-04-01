@@ -58,10 +58,9 @@ def main():
                     # Hand range 15 - 220
                     # Volume range -63.5 - 0.0
 
-        cv2.rectangle(img,(50,150), (85,400), (0,255,0), 3)
-        cv2.rectangle(img, (50, int(volBar)), (85,400), (0,255,0), cv2.FILLED)
-        cv2.putText(img, f'{int(volPer)} %', (40,450), cv2.FONT_HERSHEY_COMPLEX,
-                        1, (0,250,0), 3)
+        cv2.rectangle(img, (50, 150), (85, 400), (0, 255, 0), 3)
+        cv2.rectangle(img, (50, int(volBar)), (85, 400), (0, 255, 0), cv2.FILLED)
+        cv2.putText(img, f'{int(volPer)} %', (40, 450), cv2.FONT_HERSHEY_COMPLEX, 1, (0, 250, 0), 3)
 
         cv2.imshow('Image', img)
         if cv2.waitKey(1) & 0xff==ord('q'):
