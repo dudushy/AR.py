@@ -17,10 +17,8 @@ interface = devices.Activate(IAudioEndpointVolume._iid_, CLSCTX_ALL, None)
 volume = cast(interface, POINTER(IAudioEndpointVolume))
 
 volMin, volMax = volume.GetVolumeRange()[:2]
-startChangeVolume = False
+
 def main():
-    volBar = 400
-    volPer = 0
     while True:
         success, img = cap.read()
         imgRGB = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
@@ -36,40 +34,25 @@ def main():
                 mpDraw.draw_landmarks(img, handlandmark, mpHands.HAND_CONNECTIONS)
         
         if lmList != []:
-            x3, y3 = lmList[12][1], lmList[12][2]
             x1, y1 = lmList[4][1], lmList[4][2]
-            lenghtBetweenThumb = hypot(x3 - x1, y3 - y1)
-            if lenghtBetweenThumb < 10 :
-                startChangeVolume = True
-            else:
-                startChangeVolume = False
+            x2, y2 = lmList[8][1], lmList[8][2]
 
-            if startChangeVolume == True:
-                x2, y2 = lmList[8][1], lmList[8][2]
+            cv2.circle(img, (x1, y1), 4, (255, 0, 0), cv2.FILLED)
+            cv2.circle(img, (x2, y2), 4, (255, 0, 0), cv2.FILLED)
+            cv2.line(img, (x1, y1), (x2, y2), (255, 0, 0), 3)
 
-                cv2.circle(img, (x1, y1), 4, (255, 0, 0), cv2.FILLED)
-                cv2.circle(img, (x2, y2), 4, (255, 0, 0), cv2.FILLED)
-                cv2.line(img, (x1, y1), (x2, y2), (255, 0, 0), 3)
+            length = hypot(x2 - x1, y2 - y1)
 
-                length = hypot(x2 - x1, y2 - y1)
-
-                vol = np.interp(length, [15, 220], [volMin, volMax])
-                volBar = np.interp(length, [15, 220], [400, 150])
-                volPer = np.interp(length, [15, 220], [0, 150])
-                print(vol, length)
-                volume.SetMasterVolumeLevel(vol, None)
+            vol = np.interp(length, [15, 220], [volMin, volMax])
+            print(vol, length)
+            volume.SetMasterVolumeLevel(vol, None)
 
             # Hand range 15 - 220
             # Volume range -63.5 - 0.0
-
-        cv2.rectangle(img,(50,150), (85,400), (0,255,0), 3)
-        cv2.rectangle(img, (50, int(volBar)), (85,400), (0,255,0), cv2.FILLED)
-        cv2.putText(img, f'{int(volPer)} %', (40,450), cv2.FONT_HERSHEY_COMPLEX,
-                        1, (0,250,0), 3)
-
+            
         cv2.imshow('Image', img)
         if cv2.waitKey(1) & 0xff==ord('q'):
             break
 
 if __name__ == "__main__":
-    main() 
+    main()
