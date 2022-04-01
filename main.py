@@ -34,17 +34,13 @@ def main():
                     cx, cy = int(lm.x * w), int(lm.y * h)
                     lmList.append([id, cx, cy]) 
                 mpDraw.draw_landmarks(img, handlandmark, mpHands.HAND_CONNECTIONS)
-        
+
         if lmList != []:
             x3, y3 = lmList[12][1], lmList[12][2]
             x1, y1 = lmList[4][1], lmList[4][2]
             lenghtBetweenThumb = hypot(x3 - x1, y3 - y1)
-            if lenghtBetweenThumb < 10 :
-                startChangeVolume = True
-            else:
-                startChangeVolume = False
-
-            if startChangeVolume == True:
+            startChangeVolume = lenghtBetweenThumb < 10
+            if startChangeVolume:
                 x2, y2 = lmList[8][1], lmList[8][2]
 
                 cv2.circle(img, (x1, y1), 4, (255, 0, 0), cv2.FILLED)
@@ -59,8 +55,8 @@ def main():
                 print(vol, length)
                 volume.SetMasterVolumeLevel(vol, None)
 
-            # Hand range 15 - 220
-            # Volume range -63.5 - 0.0
+                    # Hand range 15 - 220
+                    # Volume range -63.5 - 0.0
 
         cv2.rectangle(img,(50,150), (85,400), (0,255,0), 3)
         cv2.rectangle(img, (50, int(volBar)), (85,400), (0,255,0), cv2.FILLED)
