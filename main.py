@@ -39,7 +39,7 @@ def main():
             x3, y3 = lmList[12][1], lmList[12][2]
             x1, y1 = lmList[4][1], lmList[4][2]
             lenghtBetweenThumb = hypot(x3 - x1, y3 - y1)
-            startChangeVolume = lenghtBetweenThumb < 10
+            startChangeVolume = lenghtBetweenThumb < 40
             if startChangeVolume:
                 x2, y2 = lmList[8][1], lmList[8][2]
 
