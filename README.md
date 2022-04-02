@@ -22,25 +22,25 @@ _Projeto de **Realidade Aumentada**._
 </details>
 
 ---
-##### Requisitos
+### Requisitos
 
 - [Python](https://www.python.org/downloads/)
 
 - Webcam
 
 ---
-##### Como Instalar
+### Como Instalar
 
 Após feita a instalação do **Python**, basta executar o arquivo `setup.py`.
 _Uma prompt deve aparecer e instalar todas as dependências._
 
 ---
-##### Como Executar
+### Como Executar
 
 Simplesmente execute o arquivo `main.py` e divirta-se!
 
 ---
-##### Como Usar
+### Como Usar
 
 Para usar coloque seu dedo médio na frente do polegar, e faça movimentos de abre e fecha para aumentar e diminuir o volume.
 <br>
@@ -69,25 +69,25 @@ _**Augmented Reality** Project._
 </details>
 
 ---
-##### Requirements
+### Requirements
 
 - [Python](https://www.python.org/downloads/)
 
 - Webcam
 
 ---
-##### How to Install
+### How to Install
 
 After installing **Python**, just run the `setup.py` file.
 _A prompt should appear and install all dependencies._
 
 ---
-##### How to Run
+### How to Run
 
 Simply run the file `main.py` and have fun!
 
 ---
-##### How to Use
+### How to Use
 
 To use, place your middle finger in front of your thumb, and make opening and closing movements to increase and decrease the volume.
 <br>
