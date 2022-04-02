@@ -3,8 +3,9 @@
 <!-- https://img.shields.io/badge/<SUBJECT>-<STATUS>-<COLOR>.svg -->
 ---
 <details>
-<summary><a style="pointer-events: none;"><img src="/imgs/language_-PTBR-darkgreen.svg"></a></summary>
+<summary>PTBR</summary>
 
+![ptbr](/imgs/language_-PTBR-darkgreen.svg)
 ## AR.py
 _Projeto de **Realidade Aumentada**._
 <details>
@@ -48,8 +49,9 @@ Para usar coloque seu dedo médio na frente do polegar, e faça movimentos de ab
 </details>
 
 <details>
-<summary><a style="pointer-events: none;"><img src="/imgs/language_-ENG-blue.svg"></a></summary>
+<summary>ENG</summary>
 
+![eng](/imgs/language_-ENG-blue.svg)
 ## AR.py
 _**Augmented Reality** Project._
 <details>
