@@ -3,7 +3,7 @@
 <!-- https://img.shields.io/badge/<SUBJECT>-<STATUS>-<COLOR>.svg -->
 ---
 <details>
-<summary><a style="pointer-events: none;"><img src="/imgs/language_-PTBR-green.svg"></a></summary>
+<summary><a style="pointer-events: none;"><img src="/imgs/language_-PTBR-darkgreen.svg"></a></summary>
 
 ## AR.py
 _Projeto de **Realidade Aumentada**._
