@@ -42,7 +42,7 @@ Simplesmente execute o arquivo `main.py` e divirta-se!
 ---
 ### Como Usar
 
-Para usar coloque seu dedo médio na frente do polegar, e faça movimentos de abre e fecha para aumentar e diminuir o volume.
+Para usar coloque seu dedo médio na frente do polegar, e faça movimentos de abre e fecha para aumentar e diminuir o volume. teste
 <br>
 <img height="300cm" src="/imgs/hand.jpeg" alt="exemplo">
 
