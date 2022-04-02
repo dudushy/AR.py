@@ -40,7 +40,9 @@ Simplesmente execute o arquivo `main.py` e divirta-se!
 ---
 ##### Como Usar
 
-MATHEUS
+Para usar coloque seu dedo médio na frente do polegar, e faça movimentos de abre e fecha para aumentar e diminuir o volume.
+<br>
+![exemplo](/imgs/hand.jpeg)
 
 ---
 </details>
@@ -83,7 +85,9 @@ Simply run the file `main.py` and have fun!
 ---
 ##### How to Use
 
-MATHEUS
+To use, place your middle finger in front of your thumb, and make opening and closing movements to increase and decrease the volume.
+<br>
+![example](/imgs/hand.jpeg)
 </details>
 
 [forks]: https://img.shields.io/github/forks/dudushy/AR.py
