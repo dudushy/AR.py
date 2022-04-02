@@ -1,12 +1,12 @@
 ![forks][forks] ![stars][stars] ![watchers][watchers]
+<br>
+![ptbr](https://img.shields.io/badge/language-PTBR-darkgreen.svg) ![eng](https://img.shields.io/badge/language-ENG-darkblue.svg)
 
 <!-- https://img.shields.io/badge/<SUBJECT>-<STATUS>-<COLOR>.svg -->
 ---
 <details>
 <summary>PTBR</summary>
-<br>
 
-![ptbr](/imgs/language_-PTBR-darkgreen.svg)
 ## AR.py
 _Projeto de **Realidade Aumentada**._
 <details>
@@ -51,9 +51,7 @@ Para usar coloque seu dedo médio na frente do polegar, e faça movimentos de ab
 
 <details>
 <summary>ENG</summary>
-<br>
 
-![eng](/imgs/language_-ENG-blue.svg)
 ## AR.py
 _**Augmented Reality** Project._
 <details>
