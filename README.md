@@ -1,4 +1,4 @@
-![forks][forks] ![stars][stars] ![watchers][watchers] ![issues][issues] ![pull_requests][pull_requests] ![branches][branches]
+![forks][forks] ![stars][stars] ![watchers][watchers]
 
 <!-- https://img.shields.io/badge/<SUBJECT>-<STATUS>-<COLOR>.svg -->
 ---
