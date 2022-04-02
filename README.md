@@ -4,6 +4,7 @@
 ---
 <details>
 <summary>PTBR</summary>
+<br>
 
 ![ptbr](/imgs/language_-PTBR-darkgreen.svg)
 ## AR.py
@@ -50,6 +51,7 @@ Para usar coloque seu dedo médio na frente do polegar, e faça movimentos de ab
 
 <details>
 <summary>ENG</summary>
+<br>
 
 ![eng](/imgs/language_-ENG-blue.svg)
 ## AR.py
