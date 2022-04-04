@@ -1,4 +1,4 @@
-![forks][forks] ![stars][stars] ![watchers][watchers]
+![stars][stars] ![watchers][watchers] ![forks][forks]
 <br>
 ![ptbr](https://img.shields.io/badge/language-PTBR-darkgreen.svg) ![eng](https://img.shields.io/badge/language-ENG-darkblue.svg)
 
