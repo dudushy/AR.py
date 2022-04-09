@@ -1,6 +1,6 @@
 ![stars][stars] ![watchers][watchers] ![forks][forks]
 <br>
-![ptbr](https://img.shields.io/badge/language-PTBR-darkgreen.svg) ![eng](https://img.shields.io/badge/language-ENG-darkblue.svg)
+![ptbr](https://img.shields.io/badge/languages-PTBR-darkgreen.svg) ![eng](https://img.shields.io/badge/ENG-darkblue.svg)
 
 <!-- https://img.shields.io/badge/<SUBJECT>-<STATUS>-<COLOR>.svg -->
 ---
